@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voz Acessível</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🔊 Voz Acessível</h1>
+    <p>Transformando textos em voz para todos!</p>
+</header>
+
+<main>
+
+    <h2>Transforme seu texto em áudio</h2>
+
+    <p>
+        Escreva ou cole seu texto abaixo e clique no botão
+        para ouvir a leitura em voz alta.
+    </p>
+
+    <label for="texto">Digite seu texto:</label>
+
+    <textarea
+        id="texto"
+        placeholder="Escreva aqui o texto que deseja ouvir..."
+        aria-label="Texto que será transformado em áudio"
+    ></textarea>
+
+    <label for="voz">Escolha a voz:</label>
+
+    <select id="voz">
+        <option value="">Carregando vozes...</option>
+    </select>
+
+    <label for="velocidade">Velocidade da leitura:</label>
+
+    <select id="velocidade">
+        <option value="0.7">Lenta</option>
+        <option value="1" selected>Normal</option>
+        <option value="1.3">Rápida</option>
+        <option value="1.6">Muito rápida</option>
+    </select>
+
+    <div class="buttons">
+
+        <button onclick="falar()">▶ Ouvir texto</button>
+
+        <button onclick="pausar()">⏸ Pausar</button>
+
+        <button onclick="continuar()">▶ Continuar</button>
+
+        <button onclick="parar()">⏹ Parar</button>
+
+        <button onclick="limpar()">🗑 Limpar texto</button>
+
+    </div>
+
+    <p id="status" role="status" aria-live="polite">
+        Pronto para começar!
+    </p>
+
+</main>
+
+<footer>
+    <p>Voz Acessível © 2026</p>
+    <p>Tecnologia e inclusão para todos.</p>
+</footer>
+
+<script src="java.js"></script>
+
+</body>
+</html>

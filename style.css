@@ -1,0 +1,117 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101820;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: #005fcc;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin: 18px 0 8px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 230px;
+    padding: 18px;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    font-size: 20px;
+    resize: vertical;
+}
+
+select {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+button {
+    background: #ffcc00;
+    color: #101820;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffe066;
+}
+
+button:focus,
+textarea:focus,
+select:focus {
+    outline: 4px solid white;
+    outline-offset: 3px;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #005fcc;
+    font-size: 17px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}
